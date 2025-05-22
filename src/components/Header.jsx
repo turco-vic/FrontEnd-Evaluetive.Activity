@@ -9,9 +9,9 @@ export default function Header() {
                 <h1>CLASSES!</h1>
             </div>
             <nav className={styles.nav}>
-                <ul>
-                    <li><a href="/sala">Salas!</a></li>
-                    <li><a href="/home">Home</a></li>
+                <ul className={styles.navUl}>
+                    <li><a href="/home" className={styles.navA}>Home</a ></li>
+                    <li className={styles.navLi}><a href="/sala" className={styles.navA}>Salas!</a></li>
                 </ul>
             </nav>
         </header>

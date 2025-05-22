@@ -8,7 +8,7 @@ const font = Roboto ({
 });
 
 export const metadata = {
-    title: "Students",
+    title: "Classes!",
     icons: {
     icon: "/icons/favicon.ico",
   },
@@ -16,9 +16,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    return (
-        <html>
-            <body className={font.variable}>{children}</body>
-        </html>
-    );
+  return (
+    <html lang="pt-BR">
+      <body className={`${font.variable}`}>{children}</body>
+    </html>
+  );
 }

@@ -14,11 +14,9 @@ export default function Home() {
                 <h2 className={styles.subTitleContent}>Disciplina: Front-End | Projeto Avaliativo</h2>
                 <p className={styles.descriptionContent}>O objetivo deste projeto é desenvolver uma aplicação Front-End com Next.js, consumindo uma API criada por mim anteriormente, utilizando as melhores práticas de desenvolvimento Web, foco em performance, modularidade, responsividae e UX/UI!</p>
                 <p className={styles.descriptioncontent}>A API consiste em um sistema de gerenciamento de alunos, onde é possível visualizar, adicionar, editar e remover alunos. Ela será integrada a esta aplicação Front-End mostrando os dados da Entidade 1. </p>
-                <button className={styles.button}>
-                    <Link href="/sala">
-                        <span className={styles.buttonText}>Ver Alunos</span>
-                    </Link>
-                </button>
+                <Link href="/sala" prefetch>
+                    <button type="primary" className={styles.button}>Ver Salas!</button>
+                </Link>
             </div>
         </div>
     );
